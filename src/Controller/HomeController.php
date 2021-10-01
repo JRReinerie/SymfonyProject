@@ -15,7 +15,7 @@ class HomeController extends AbstractController
     public function mainMethod(): Response
     {
         return $this->render('homePage.html.twig', [
-            'fName' => 'Jason',
+            'fName' => 'wereld',
             'lName' => 'Reinerie',
         ]);
     }
