@@ -10,13 +10,12 @@ use Symfony\Component\Routing\Annotation\Route;
 class SortPageController extends AbstractController
 {
     /**
-     * @Route("/", name="sortpage")
+     * @Route("/sortpage", name="sortpage")
      */
     public function mainMethod(): Response
     {
-        return $this->render('homePage.html.twig', [
-            'fName' => 'wereld',
-            'lName' => 'Reinerie',
+        return $this->render('sortpage.html.twig', [
+
         ]);
     }
 }

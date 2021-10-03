@@ -14,9 +14,8 @@ class HomePageController extends AbstractController
      */
     public function mainMethod(): Response
     {
-        return $this->render('homePage.html.twig', [
-            'fName' => 'wereld',
-            'lName' => 'Reinerie',
+        return $this->render('homepage.html.twig', [
+
         ]);
     }
 }
