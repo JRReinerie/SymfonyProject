@@ -1,11 +1,23 @@
 <!DOCTYPE html>
 <html>
 <head>
+    {% include 'base.html.twig' %}
     <title>Welcome to Symfony!</title>
 </head>
 <body>
-<h1>HALLO</h1>
-
-    Hello {{ fName }}
+    {% block body %}
+        <div class="container">
+            <h1 class="mt-5">Portfolio & Project Jason Reinerie</h1>
+            <p class="lead">
+                Mijn portfolio gemaakt met behulp van fymony 5.4. Bevat al mijn projecten in php symfony. In dit project <br>
+                maak ik gebruik van php, javascript, html, bootstrap en css.
+            </p>
+            <p>
+                Klik <a href="#">hier</a> voor het eerste project
+            </p>
+        </div>
+    {% endblock %}
+    {% include 'footer.html.twig' %}
 </body>
+
 </html>
